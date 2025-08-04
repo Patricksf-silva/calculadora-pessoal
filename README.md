@@ -1,12 +1,28 @@
-# React + Vite
+# Calculadora de Orçamento Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma calculadora simples de orçamento pessoal desenvolvida com ReactJS utilizando Vite, com foco em boas práticas de componentização, gerenciamento de estado e renderização condicional. O objetivo é fornecer uma interface clara e reativa para que o usuário possa visualizar rapidamente seu saldo com base em receitas e despesas informadas.
 
-Currently, two official plugins are available:
+## 🔧 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ReactJS (via Vite)
+- JavaScript (sem TypeScript)
+- HTML5
+- CSS3 com CSS Modules
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📋 Regras de Negócio
+
+A aplicação segue uma lógica simples e direta de controle financeiro pessoal:
+
+- O usuário insere dois valores:
+  - Receita (valor total que possui ou irá receber)
+  - Despesa (valor total que deve ou pretende gastar)
+
+- Ao submeter o formulário, o sistema realiza o cálculo do saldo:
+  - Saldo = Receita - Despesa
+
+- Com base no saldo calculado, é exibida uma mensagem de status:
+  - Saldo positivo: “Parabéns! Seu saldo está positivo.”
+  - Saldo negativo: “Atenção! Seu saldo está negativo.”
+  - Saldo igual a zero: “Seu saldo está zerado.”
